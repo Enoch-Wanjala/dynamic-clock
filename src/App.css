@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* stylingthe body and centering our clock */
+body {
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* stylying the clock container */
+.color-clock {
+    height: 400px;
+    width: 400px;
+    color: white;
+    background-color: cornflowerblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    border-radius: 50%;
+    border: 10px solid #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.color-clock-title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    border-bottom: 2px solid white;
+    padding-bottom: 10px;
+}
+
+/* clock time styling  */
+.clock-time {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    border-bottom: 2px dotted white;
+    padding-bottom: 10px;
+}
+
+/* clock date styling  */
+.clock-date {
+    font-size: 1.25rem;
+    font-weight: normal;
+}
