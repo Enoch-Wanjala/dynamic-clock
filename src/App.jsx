@@ -1,13 +1,19 @@
 
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { format } from 'date-fns'
 import './App.css'
 
 //imported the format function from date-fns to format date and time 
 function App() {
-  const [count, setCount] = useState(0)
+  const [now, setNow] = useState(new Date())
 
-  const now = new Date()
+  useEffect(() => {
+    const timerId = setInterval(() => {
+      setNow(new Date())
+    }, 1000)
+
+    return () => clearInterval(timerId)
+  }, [])
 
   return (
 
